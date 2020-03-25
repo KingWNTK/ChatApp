@@ -1,0 +1,16 @@
+.my-message-area {
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.my-message-item {
+    padding: 0;
+    border: none;
+}
+
+.my-message-card {
+    padding: 0.5em;
+    width: fit-content;
+    border-radius: 1em;
+}

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>edu.rice.comp504.parse.UserParse</OriginalElement>
+  <nodes>
+    <node x="1431.0" y="106.0">edu.rice.comp504.payload.response.JoinRoomResponse</node>
+    <node x="1609.0" y="106.0">edu.rice.comp504.payload.response.UserExistResponse</node>
+    <node x="701.0" y="263.0">edu.rice.comp504.cmd.JoinRoomCmd</node>
+    <node x="412.0" y="106.0">edu.rice.comp504.payload.response.AddRoomResponse</node>
+    <node x="1317.0" y="177.0">edu.rice.comp504.parse.CreateRoomRequest</node>
+    <node x="265.0" y="263.0">edu.rice.comp504.cmd.CreateRoomCmd</node>
+    <node x="1148.0" y="334.0">edu.rice.comp504.parse.RoomParse</node>
+    <node x="558.0" y="263.0">edu.rice.comp504.cmd.EditRoomCmd</node>
+    <node x="422.0" y="263.0">edu.rice.comp504.cmd.SendMsgCmd</node>
+    <node x="1089.0" y="106.0">edu.rice.comp504.payload.response.NoUserResponse</node>
+    <node x="1456.0" y="334.0">edu.rice.comp504.model.Message</node>
+    <node x="345.25" y="177.0">edu.rice.comp504.cmd.AbstractCmd</node>
+    <node x="227.0" y="106.0">edu.rice.comp504.payload.response.HeartbeatResponse</node>
+    <node x="406.0" y="334.0">edu.rice.comp504.parse.ExitRoomRequest</node>
+    <node x="0.0" y="334.0">edu.rice.comp504.parse.HeartbeatRequest</node>
+    <node x="1596.0" y="334.0">edu.rice.comp504.model.Room</node>
+    <node x="904.0" y="106.0">edu.rice.comp504.payload.response.UserInUseResponse</node>
+    <node x="798.0" y="334.0">edu.rice.comp504.parse.SendMsgRequest</node>
+    <node x="1093.0" y="177.0">edu.rice.comp504.parse.RegisterUserRequest</node>
+    <node x="911.0" y="0.0">edu.rice.comp504.payload.response.ResponseAdapter</node>
+    <node x="1527.0" y="177.0">edu.rice.comp504.controller.ChatAppController</node>
+    <node x="1302.0" y="334.0">edu.rice.comp504.parse.UserParse</node>
+    <node x="904.0" y="177.0">org.eclipse.jetty.websocket.api.annotations.WebSocket</node>
+    <node x="1737.0" y="177.0">edu.rice.comp504.parse.UpdateRoomRequest</node>
+    <node x="122.0" y="263.0">edu.rice.comp504.cmd.ExitRoomCmd</node>
+    <node x="1715.0" y="334.0">edu.rice.comp504.model.User</node>
+    <node x="583.0" y="106.0">edu.rice.comp504.payload.response.SendMsgResponse</node>
+    <node x="987.0" y="334.0">edu.rice.comp504.AppContext</node>
+    <node x="754.0" y="106.0">edu.rice.comp504.payload.response.InitResponse</node>
+    <node x="203.0" y="334.0">edu.rice.comp504.parse.CheckUserRequest</node>
+    <node x="602.0" y="334.0">edu.rice.comp504.parse.JoinRoomRequest</node>
+    <node x="869.0" y="253.0">edu.rice.comp504.controller.WebSocketController</node>
+    <node x="1253.0" y="106.0">edu.rice.comp504.payload.response.EditRoomResponse</node>
+    <node x="0.0" y="263.0">edu.rice.comp504.cmd.CloseCmd</node>
+    <node x="1794.0" y="106.0">edu.rice.comp504.payload.response.RemoveRoomResponse</node>
+    <node x="0.0" y="106.0">edu.rice.comp504.payload.response.UpdateRoomUsersResponse</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="edu.rice.comp504.payload.response.EditRoomResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="1332.0" y="76.0" />
+      <point x="1013.9545454545455" y="76.0" />
+      <point x="27.454545454545496" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.NoUserResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="1161.0" y="86.0" />
+      <point x="1000.2272727272727" y="86.0" />
+      <point x="13.727272727272748" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.UserExistResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="1691.5" y="56.0" />
+      <point x="1041.409090909091" y="56.0" />
+      <point x="54.90909090909099" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.ExitRoomCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="183.5" y="233.0" />
+      <point x="376.0" y="233.0" />
+      <point x="-30.75" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.CloseCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="51.0" y="223.0" />
+      <point x="355.5" y="223.0" />
+      <point x="-51.25" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.JoinRoomResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="1510.0" y="66.0" />
+      <point x="1027.6818181818182" y="66.0" />
+      <point x="41.181818181818244" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.JoinRoomCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="762.5" y="223.0" />
+      <point x="458.0" y="223.0" />
+      <point x="51.25" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.controller.WebSocketController" target="org.eclipse.jetty.websocket.api.annotations.WebSocket">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.UpdateRoomUsersResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="103.5" y="46.0" />
+      <point x="917.8636363636364" y="46.0" />
+      <point x="-68.63636363636363" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.RemoveRoomResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="1880.0" y="46.0" />
+      <point x="1055.1363636363635" y="46.0" />
+      <point x="68.63636363636351" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.EditRoomCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="619.5" y="233.0" />
+      <point x="437.5" y="233.0" />
+      <point x="30.75" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.SendMsgCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="480.0" y="243.0" />
+      <point x="417.0" y="243.0" />
+      <point x="10.25" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.HeartbeatResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="309.5" y="56.0" />
+      <point x="931.5909090909091" y="56.0" />
+      <point x="-54.90909090909088" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.InitResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="819.0" y="86.0" />
+      <point x="972.7727272727273" y="86.0" />
+      <point x="-13.727272727272748" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.cmd.CreateRoomCmd" target="edu.rice.comp504.cmd.AbstractCmd">
+      <point x="0.0" y="-13.0" />
+      <point x="333.5" y="243.0" />
+      <point x="396.5" y="243.0" />
+      <point x="-10.25" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.SendMsgResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="658.5" y="76.0" />
+      <point x="959.0454545454545" y="76.0" />
+      <point x="-27.454545454545496" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.UserInUseResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="0.0" y="13.0" />
+    </edge>
+    <edge source="edu.rice.comp504.payload.response.AddRoomResponse" target="edu.rice.comp504.payload.response.ResponseAdapter">
+      <point x="0.0" y="-13.0" />
+      <point x="487.5" y="66.0" />
+      <point x="945.3181818181819" y="66.0" />
+      <point x="-41.18181818181813" y="13.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.3806646525679758" x="983.0" y="180.0" />
+  <SelectedNodes>
+    <node>edu.rice.comp504.parse.UserParse</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

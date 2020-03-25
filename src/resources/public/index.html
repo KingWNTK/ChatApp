@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ChatApp</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--<script src="js/view.js"></script>-->
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Dragonball Chat App</h1>
+            <p class="lead">A chat app that people can chat!</p>
+        </div>
+    </div>
+    <div class="container">
+        <form class="mx-auto" style="width: 200px; margin-top: 2em;">
+            <div class="form-group">
+                <label for="inputUsername">Username</label>
+                <input class="form-control" id="inputUsername" aria-describedby="username" placeholder="Enter username">
+            </div>
+
+            <div id="registerDiv" hidden>
+                <div class="form-group">
+                    <label>Age</label>
+                    <input class="form-control" placeholder="Enter ege">
+                </div>
+                <div class="form-group">
+                    <label>Area</label>
+                    <select class="form-control">
+                        <option>North America</option>
+                        <option>South America</option>
+                        <option>Asia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>School</label>
+                    <select class="form-control">
+                        <option>Rice University</option>
+                        <option>Peking University</option>
+                        <option>UESTC</option>
+                        <option>Harvard University</option>
+                        <option>Duke University</option>
+                        <option>Nanjing University</option>
+                        <option>Wuhan University</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(() => {
+        $('form').on('submit', (e) => {
+            e.preventDefault();
+        })
+        $('button').on('click', () => {
+            // alert($('#registerDiv').attr('hidden'));
+            if($('#registerDiv').attr('hidden') === 'hidden') {
+                $('#registerDiv').attr('hidden', false);
+            }
+            else {
+                window.location.href = 'main.html';
+            }
+        })
+    })
+</script>
